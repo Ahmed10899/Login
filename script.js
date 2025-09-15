@@ -150,7 +150,7 @@ function showMessage(message, type = "success") {
     // Nachricht nach 3 Sekunden automatisch ausblenden
     setTimeout(() => {
         messageBox.style.display = "none";
-    }, 3000);
+    }, 1000);
 }
 
 // Passwort-Anzeige-Toggle
@@ -229,4 +229,5 @@ window.onload = function() {
 setInterval(() => updateDateTime(document.getElementById('languageSelect').value), 1000);
 
 // Aktualisiert die Verweildauer auf der Login-Seite jede Sekunde
+
 setInterval(() => updateLoginTime(document.getElementById('languageSelect').value), 1000);
